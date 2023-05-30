@@ -1,5 +1,32 @@
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+p {
+    color: white;
+    font-size: 20px;
+    padding-top: 30px ;
+    
+}
+div {
+    color: white;
+    
+    
+}
+a {
+    color: white;
+    font-size: 17px;
+}
+label {
+    color: white;
+    font-size: 35px
+}
+body {
+    background-color:#FF9333
+}
+#outer-div {
+    color: white;
+    text-align: center;
+    font-size: 25px
+}
+#snacks {
+    color: blue;
+    font-size: 35px;
+    font-family: "Lucida Console", "Courier New", monospace;
 }

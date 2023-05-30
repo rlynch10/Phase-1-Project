@@ -1,0 +1,52 @@
+{
+    "Films": [
+        {
+            "title": "About My Father",
+            "genre": "Comedy",
+            "info": "The hottest comic in America, Sebastian Maniscalco joins forces with legendary Italian-American and two-time Oscar winner, Robert De Niro, in the new comedy ABOUT MY FATHER. The film centers around Sebastian (Maniscalco) who is encouraged by his fiancée (Leslie Bibb) to bring his immigrant, hairdresser father, Salvo (De Niro), to a weekend get-together with her super-rich and exceedingly eccentric family (Kim Cattrall, Anders Holm, Brett Dier, David Rasche). The weekend develops into what can only be described as a culture clash, leaving Sebastian and Salvo to discover that the great thing about family is everything about family."
+        },
+        {
+            "title": "Fast X",
+            "genre": "Action/Adventure",
+            "info": "Over many missions and against impossible odds, Dom Toretto (Vin Diesel) and his family have outsmarted, out-nerved and outdriven every foe in their path. Now, they confront the most lethal opponent they've ever faced: A terrifying threat emerging from the shadows of the past who's fueled by blood revenge, and who is determined to shatter this family and destroy everything--and everyone--that Dom loves, forever."
+        },
+        {
+            "title": "Guardians Of The Galaxy Vol. 3",
+            "genre": "Sci-fi, Adventure, Action, Fantasy, Comedy",
+            "info": "In Marvel Studios 'Guardians of the Galaxy Vol. 3' our beloved band of misfits are looking a bit different these days. Peter Quill, still reeling from the loss of Gamora, must rally his team around him to defend the universe along with protecting one of their own. A mission that, if not completed successfully, could quite possibly lead to the end of the Guardians as we know them."
+        },
+        {
+            "title": "Kandahar",
+            "genre": "Action, Mystery & thriller",
+            "info":"An undercover CIA operative gets stuck in hostile territory in Afghanistan after his mission is exposed. Accompanied by his translator, he must fight enemy combatants as he tries to reach an extraction point in Kandahar." 
+        },
+        {
+            "title": "The Little Marmaid",
+            "genre": "Kids & family, Musical, Fantasy",
+            "info": "The youngest of King Triton's daughters, and the most defiant, Ariel longs to find out more about the world beyond the sea, and while visiting the surface, falls for the dashing Prince Eric. While mermaids are forbidden to interact with humans, Ariel must follow her heart. She makes a deal with the evil sea witch, Ursula, which gives her a chance to experience life on land, but ultimately places her life -- and her father's crown -- in jeopardy."
+        }
+    ],
+    "Snacks": [
+        {
+            "type": "Popcorn",
+            "topping-1": "Butter",
+            "topping-2": "Salt"
+        },
+        {
+            "type": "Hot Dog",
+            "topping-1": "Relish",
+            "topping-2":"Mustard"
+        },
+        {
+            "type": "Ice Cream",
+            "topping-1": "Sprinkles",
+            "topping-2": "Nuts"   
+        },
+        {
+            "type": "Candy",
+            "topping-1": "Chocolate",
+            "topping-2": "Sour Candy"
+        }
+            
+    ]
+}
