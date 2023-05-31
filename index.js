@@ -4,10 +4,15 @@ document.addEventListener("DOMContentLoaded", () => {
     e.preventDefault()
     buildSnack(e.target.snack_box.value)
     form.reset()
+    console.log(e.target)
   })
 })
 
-
+//create a light/dark mode
+function lightDarkMode() {
+  var element = document.body
+  element.classList.toggle("dark")
+}
 
 //create form
 var form = document.createElement("form")
