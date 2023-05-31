@@ -3,8 +3,9 @@ document.addEventListener("DOMContentLoaded", () => {
   form.addEventListener('submit', (e) => {
     e.preventDefault()
     buildSnack(e.target.snack_box.value)
+    lightDarkMode(e.target)
+    checkBoxPost(e.target.mov_post)
     form.reset()
-    console.log(e.target)
   })
 })
 
@@ -40,6 +41,17 @@ function buildSnack(snack){
 
 function handleDelete(e){
     e.target.parentNode.remove()  
+}
+
+//check box button
+function checkBoxPost() {
+  var checkBox = document.getElementById("mov_post")
+  var text = document.getElementById("text")
+  if (checkBox.checked == true){
+    text.style.display = "block"
+  } else {
+    text.style.display = "none"
+  }
 }
 
 
