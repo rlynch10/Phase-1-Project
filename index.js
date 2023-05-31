@@ -61,30 +61,6 @@ s.setAttribute("type", "submit")
 s.setAttribute("value", "Submit")
 
 
-//Append snack element
-
-
-//Append submit button
-
-
-
-
-
-
-
-
-
-//function handleSnack(snack){
-  //console.log(snack)
-//}
-
-//function addElement() {
- // const para = document.createElement("p")
- /// document.getElementById("movie-snacks").addEventListener("submit", myFunction)
-//}
-
-
-
 //function addSnack(e) {
  //   e.preventDefault()
   //  const snack ={
@@ -104,7 +80,6 @@ s.setAttribute("value", "Submit")
   //  })
 //}
 
-//document.getElementById("movie-snacks").addEventListener("submit", myFunction)
 
 //function myFunction() {
   //alert("the form was submitted")

@@ -10,13 +10,12 @@
     </head>
     <body>
         <div class="container">
-            <h1 style="text-align:center">Let's go to the Movies!</h1>
+            <h1>Let's go to the Movies!</h1>
                <!--User enters what snack they want and a list of said snacks is created-->
             <br>    
-               <p>Movie Snacks</p>
-            <br>
+               <p id="mov-snack">Movie Snacks:</p>
             <div id="snackDiv">
-                <p>What are we eating?</p>
+                <p class="eat">What are we eating?</p>
                 <form id="snackForm" action="#" method="post">
                     <input id="snack_box" type="text" class="snackClass">
                     <input id="snack-sub" type="submit">
@@ -29,7 +28,51 @@
             
         </div>
             
-            <!--User selects what available movie they want to see (after seeing posters/reviews) and chooses it from a dropdown-->
+            <!--User selects what available movie they want to see (after seeing posters/reviews) and chooses it-->
+                <div class="mov_container">
+                    <p class="play">Currently Playing in Theaters:</p>
+                </div>
+                <div class="img-block">
+                    <figure class="aboutimage">
+                        <figcaption>About my Father</figcaption>
+                        <img src="https://dx35vtwkllhj9.cloudfront.net/lionsgateus/about-my-father/images/regions/us/onesheet.jpg" alt="About My Father" width="225" height="300">
+                        <br>
+                        <a href="https://www.rottentomatoes.com/m/about_my_father_2023/reviews?intcmp=rt-what-to-know_read-critics-reviews" target="_blank">About My Father Reviews</a>
+                    </figure>
+                    <figure class="aboutimage">
+                        <figcaption>Fast X</figcaption>
+                        <img class="aboutimage" src="https://movies.universalpictures.com/media/fstx-montage1sheet2-rgb-1-64108e93e63dd-1.jpg" alt="Fast X" width="225" height="300">
+                        <br>
+                        <a href="https://www.rottentomatoes.com/m/fast_x/reviews?intcmp=rt-what-to-know_read-critics-reviews" target="_blank">Fast X Reviews</a>
+                    </figure>
+                    <figure class="aboutimage">
+                        <figcaption>Guardians of The Galaxy Vol. 3</figcaption>
+                        <img class="aboutimage" src="https://www.themoviedb.org/t/p/original/r2J02Z2OpNTctfOSN1Ydgii51I3.jpg" alt="Gotg3" width="225" height="300">
+                        <br>
+                        <a href="https://www.rottentomatoes.com/m/guardians_of_the_galaxy_vol_3/reviews?intcmp=rt-what-to-know_read-critics-reviews" target="_blank">Guardians of The Galaxy Vol. 3 Reviews</a>
+                    </figure>
+                    <figure class="aboutimage">
+                        <figcaption>Kandahar</figcaption>
+                        <img class="aboutimage" src="http://www.impawards.com/2023/posters/kandahar_xlg.jpg" alt="Kandahar" width="225" height="300">
+                        <br>
+                        <a href="https://www.rottentomatoes.com/m/kandahar_2023/reviews?intcmp=rt-what-to-know_read-critics-reviews" target="_blank">Kandahar Reviews</a>
+                    </figure>
+                    <figure class="aboutimage">
+                        <figcaption>The Little Mermaid</figcaption>
+                        <img class="aboutimage" src="https://static.wikia.nocookie.net/disney/images/6/61/The_Little_Mermaid_%282023%29_-_Poster.jpg/revision/latest/scale-to-width-down/1000?cb=20230313010412" alt="The Little Mermaid" width="225" height="300">
+                        <br>
+                        <a href="https://www.rottentomatoes.com/m/the_little_mermaid_2023/reviews?intcmp=rt-what-to-know_read-critics-reviews" target="_blank">The Little Mermaid Reviews</a>
+                    </figure>
+                </div>
+            </div>
+            <form name="formName" action="" method="post">
+                <input type="checkbox" name="movie1" value="About My Father" /> About My Father
+                <input type="checkbox" name="movie2" value="Fast X" /> Fast X
+                <input type="checkbox" name="movie3" value="Guardians of The Galaxy Vol. 3" /> Guardians of the Galaxy Vol. 3
+                <input type="checkbox" name="movie3" value="Kandahar" /> Kandahar
+                <input type="checkbox" name="movie3" value="The Little Mermaid" /> The Little Mermaid
+                <input id="mov_post" type="submit" name="submit" value="Post" />
+            </form>
             
                 
             

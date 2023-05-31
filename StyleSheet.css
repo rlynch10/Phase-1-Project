@@ -1,9 +1,3 @@
-p {
-    color: white;
-    font-size: 20px;
-    padding-top: 30px ;
-    
-}
 div {
     color: white;
     
@@ -18,7 +12,7 @@ label {
     font-size: 35px
 }
 body {
-    background-color:#FF9333
+    background-color:#87CEFA
 }
 #outer-div {
     color: white;
@@ -29,4 +23,41 @@ body {
     color: blue;
     font-size: 35px;
     font-family: "Lucida Console", "Courier New", monospace;
+}
+.imageblock {
+    display: flex;
+    justify-content: space-between;
+}
+.imageblock figure {
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+    width: 30vw;
+    margin: 0;
+}
+.imageblock figure * {
+    width: 100%;
+}
+figcaption {
+    font-size: 20px
+}
+h1 {
+    color: #DC143C;
+    text-align: center;
+}
+.play {
+    font-size: 30px;
+    color: #4B0082;
+    padding-top: 30px
+}
+.eat {
+    color: #2F4F4F;
+    font-size: 20px;
+}
+#mov-snack {
+    font-size: 30px;
+    color: #4B0082;
+}
+.revClass {
+    font-size: 30px
 }
