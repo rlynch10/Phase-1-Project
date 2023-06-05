@@ -27,3 +27,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
+function lightDarkMode() {
+    var element = document.body
+    element.classList.toggle("dark")
+  }
