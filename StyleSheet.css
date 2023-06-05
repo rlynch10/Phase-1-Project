@@ -71,3 +71,10 @@ button {
     background-color: #222;
     color: #e6e6e6; 
 }
+.highlight {
+    background: green;
+}
+.img-block {
+    display: block;
+    width: 200px
+}

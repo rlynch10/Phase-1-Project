@@ -32,3 +32,10 @@ function lightDarkMode() {
     var element = document.body
     element.classList.toggle("dark")
   }
+
+//add a highlight to movie when user selects
+  var addclass = 'color';
+  var $cols = ('.aboutimage').click((e) => {
+      $cols.removeClass(addclass);
+      $(this).addClass(addclass);
+  });
