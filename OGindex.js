@@ -1,13 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
-  let form = document.querySelector('form')
+  var form = document.querySelector('form')
   form.addEventListener('submit', (e) => {
     e.preventDefault()
     buildSnack(e.target.snack_box.value)
-    lightDarkMode(e.target)
-    checkBoxPost(e.target.mov_post)
+    //buildButton(e.target.snack-sub)
+    //checkBoxPost(e.target.mov_post)
     form.reset()
   })
 })
+//lightDarkMode(e.target)
+
 
 //create a light/dark mode
 function lightDarkMode() {
@@ -15,38 +17,64 @@ function lightDarkMode() {
   element.classList.toggle("dark")
 }
 
-//create form
-var form = document.createElement("form")
-form.setAttribute("action", "#")
-form.setAttribute("method", "post")
-form.setAttribute("id", "snackForm")
-form.setAttribute("class", "snackClass")
+// //create form
+// var form = document.createElement("form")
+// form.setAttribute("action", "#")
+// form.setAttribute("method", "post")
+// form.setAttribute("id", "snackForm")
+// form.setAttribute("class", "snackClass")
 
 
-var formBox = document.createElement('input')
-formBox.setAttribute("id", "snack_box")
-formBox.setAttribute("type", "text")
+// var formBox = document.createElement('input')
+// formBox.setAttribute("id", "snack_box")
+// formBox.setAttribute("type", "text")
 
 
 
 function buildSnack(snack){
-  let p = document.createElement('p')
+  var p = document.createElement('p')
   let btn = document.createElement('button')
   btn.addEventListener('click', handleDelete)
-  btn.textContent = 'x'
-  p.textContent = `${snack} `
-  p.appendChild(btn)
+  btn.textContent = ' x'
+  p.textContent = `${snack}`
+  p.append(btn)
   document.querySelector('#snack_container').appendChild(p)
 }
+function buildB(snack){
+  var p = document.createElement('p')
+  var b = document.createElement('button');
+  b.addEventListener('click', handleDelete)
+  //b.setAttribute('content', 'test content');
+  b.setAttribute('class', 'btn');  
+  b.textContent = ' x';
+  p.textContent = `${snack}`
+  p.append(btn)
+  document.querySelector('#snack_container').appendChild(p)
 
+//var wrapper = document.getElementById("divWrapper");
+//wrapper.appendChild(b);
+}
+
+
+// function buildButton(btn){
+//   var btn = document.createElement('button')
+//   btn.addEventListener('click', handleDelete)
+//   btn.textContent = ' x'
+//   p.appendChild(btn)
+//   document.querySelector('#snack_container').appendChild(p)
+// }
+
+//delete snacks from form
 function handleDelete(e){
     e.target.parentNode.remove()  
 }
 
 //check box button
-function checkBoxPost() {
+function checkBoxPost(check) {
   var checkBox = document.getElementById("mov_post")
   var text = document.getElementById("text")
+  let par = document.createElement('p')
+  par.textContent = `${check} `
   if (checkBox.checked == true){
     text.style.display = "block"
   } else {
@@ -55,27 +83,8 @@ function checkBoxPost() {
 }
 
 
+//Radio buttons for movie choice
 
-
-//create UL
-//const ul = document.createElement('ul')
-
-//create LI
-//const li = document.createElement('li')
-
-//create form
-
-
-
-//create input element for snack
-var SN = document.createElement("input")
-SN.setAttribute("type", "text")
-SN.setAttribute("name", "snack")
-
-//create submit button
-var s = document.createElement("input")
-s.setAttribute("type", "submit")
-s.setAttribute("value", "Submit")
 
 
 //function addSnack(e) {
@@ -95,11 +104,6 @@ s.setAttribute("value", "Submit")
   //  .then(data => {
   //    console.log(data)
   //  })
-//}
-
-
-//function myFunction() {
-  //alert("the form was submitted")
 //}
 
 
