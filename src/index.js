@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
     //Element where movie choice resides
     
     var movChoice = document.getElementById("mov_choice")
-    var movieSubmit = document.getElementById("mov_post")
     var movForm = document.getElementById("myMovieID")
 
     //Attached Event Listeners
@@ -35,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     
     newMovForm.addEventListener("submit", (e) => {
-        e.preventDefault()
+        
             e.preventDefault()
             var allOptions = movForm.elements["movie"]
             var selectedOptions = []
@@ -45,9 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
             })
             var movString = selectedOptions.join("")
-            movChoice.innerText = `You have selected: ${movString} `
-        
-        
+            movChoice.innerText = `You have selected: ${movString} `   
     })
     
 });
@@ -58,11 +55,21 @@ function lightDarkMode() {
     element.classList.toggle("dark")
   }
 
-function fetchFilms() {
+  function fetchFilms() {
     fetch("http://localhost:3000/Films")
     .then(res => res.json())
     .then(data => {
       console.log(data)
       
     })
+  }
+function renderOneFilm(film){
+    // build film
+    let card = document.createElement('li')
+    card.className = 'card'
+
+}
+
+  function initialize() {
+    filmData.forEach(film => renderOneFilm(film))
   }
