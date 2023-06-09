@@ -1,14 +1,22 @@
 document.addEventListener("DOMContentLoaded", () => {
     //initialize Snacklist
     const snackList = new SnackList();
+    
     //form input fields
     const newSnackForm = document.getElementById("create-snack-form");
     const newSnackDescription = document.getElementById("new-snack-description");
-    //const newSnackPriority = document.getElementbyId("new-snack-priority");
+    const newMovForm = document.getElementById("myMovieID")
+
     //Element where snacks reside
     const snackUI = document.getElementById("snacks");
 
     const renderApp = () => (snackUI.innerHTML = snackList.renderSnacks());
+
+    //Element where movie choice resides
+    
+    var movChoice = document.getElementById("mov_choice")
+    var movieSubmit = document.getElementById("mov_post")
+    var movForm = document.getElementById("myMovieID")
 
     //Attached Event Listeners
 
@@ -25,17 +33,36 @@ document.addEventListener("DOMContentLoaded", () => {
             renderApp();
         }
     });
-
+    
+    newMovForm.addEventListener("submit", (e) => {
+        e.preventDefault()
+            e.preventDefault()
+            var allOptions = movForm.elements["movie"]
+            var selectedOptions = []
+            allOptions.forEach((element) => {
+                if (element.checked) {
+                    selectedOptions.push(element.value)
+                }
+            })
+            var movString = selectedOptions.join("")
+            movChoice.innerText = `You have selected: ${movString} `
+        
+        
+    })
+    
 });
+
 
 function lightDarkMode() {
     var element = document.body
     element.classList.toggle("dark")
   }
 
-//add a highlight to movie when user selects
-  var addclass = 'color';
-  var $cols = ('.aboutimage').click((e) => {
-      $cols.removeClass(addclass);
-      $(this).addClass(addclass);
-  });
+function fetchFilms() {
+    fetch("http://localhost:3000/Films")
+    .then(res => res.json())
+    .then(data => {
+      console.log(data)
+      
+    })
+  }

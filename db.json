@@ -25,28 +25,5 @@
             "genre": "Kids & family, Musical, Fantasy",
             "info": "The youngest of King Triton's daughters, and the most defiant, Ariel longs to find out more about the world beyond the sea, and while visiting the surface, falls for the dashing Prince Eric. While mermaids are forbidden to interact with humans, Ariel must follow her heart. She makes a deal with the evil sea witch, Ursula, which gives her a chance to experience life on land, but ultimately places her life -- and her father's crown -- in jeopardy."
         }
-    ],
-    "Snacks": [
-        {
-            "type": "Popcorn",
-            "topping-1": "Butter",
-            "topping-2": "Salt"
-        },
-        {
-            "type": "Hot Dog",
-            "topping-1": "Relish",
-            "topping-2":"Mustard"
-        },
-        {
-            "type": "Ice Cream",
-            "topping-1": "Sprinkles",
-            "topping-2": "Nuts"   
-        },
-        {
-            "type": "Candy",
-            "topping-1": "Chocolate",
-            "topping-2": "Sour Candy"
-        }
-            
     ]
 }

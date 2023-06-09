@@ -74,7 +74,11 @@ button {
 .highlight {
     background: green;
 }
-.img-block {
-    display: block;
-    width: 200px
+#mov_choice {
+    font-size: 25px;
+    color: #ed42c5
+}
+#myMovieID {
+    font-size: 20px;
+
 }
